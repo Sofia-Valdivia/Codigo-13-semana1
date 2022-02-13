@@ -6,7 +6,7 @@
 git init
 ```
 - Este comando solo se hace una vez por proyecto, sirve para  inicializar nuestro proyecto con git.
-ojo, crear una carpeta oculta, llamada git.
+- :ojo:, crear una carpeta oculta, llamada git.
 
 ```
 git status
@@ -18,13 +18,13 @@ git status
 git add .
 git add nombre_de_archivo
 ```
-- Se encarga de agregar los archivos a la memoria de git, es decir los gaurda en un stash.
+- Se encarga de agregar los archivos a la memoria de git, es decir los guarda en un stash.
 
 ```
 git commit -m "comentario"
 ```
 - Crea un punto en la linea de tiempo de nuestros cambios y a estos es posible adjuntarles un comentario, 
-los comentarios deben estar relacionados a los cambios que hice, esto es una recomendación.
+- Los comentarios deben estar relacionados a los cambios que hice, esto es una recomendación.
 
 ```
 git push origin main
@@ -35,3 +35,19 @@ git push origin main
 git pull origin main
 ```
 - Sirve para poder descargar los cambios de nuestro repositorio en la nube, en este caso git hub.
+
+```
+git branch 
+```
+- Sirve para poder listar los branch que tengo localmente y me dice en cual me encuentro actualmente.
+
+```
+git checkout -b nombre_del_branch
+```
+- Sirve para crear un branch nuevo y poder trabajar en él.
+
+```
+git checkout nombre_del_branch
+```
+- Sirve para poder moverme entre ramas.
+- :ojo : Si el checkout no tiene el -b; solo será para moverse entre ramas.
